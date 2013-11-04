@@ -9,7 +9,7 @@ void anotherFunc(void)
 {
     pthread_mutex_lock(&mymutex);
 int i;
-    for(i = 0; i < 10; i++)
+    for(i = 0; i < 6; i++)
         printf("anotherFunc\n");
 
     pthread_mutex_unlock(&mymutex);
@@ -21,7 +21,7 @@ void func(void)
 {
     pthread_mutex_lock(&mymutex);
 int i;
-    for(i = 0; i < 10; i++)
+    for(i = 0; i < 6; i++)
         printf("func\n");
 
     pthread_mutex_unlock(&mymutex);
